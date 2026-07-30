@@ -1,3 +1,4 @@
+package Arithematic_Calculator;
 
 import java.util.Scanner;
 public class Arithematic_Calculator {
