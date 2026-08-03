@@ -1,4 +1,3 @@
-// Digit extraction
 package Digit_extraction;
 import java.util.Scanner;
 public class Final {
