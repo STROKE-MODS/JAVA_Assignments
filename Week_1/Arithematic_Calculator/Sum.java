@@ -1,6 +1,0 @@
-package Arithematic_Calculator;
-public class Sum {
-    double addition(double a,double b){
-        return a+b;
-    }
-}

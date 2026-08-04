@@ -1,4 +1,4 @@
-package Arithematic_Calculator;
+
 public class Divison {
     double remainder(double a,double b){
         if(b==0){
