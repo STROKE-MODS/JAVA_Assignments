@@ -11,7 +11,7 @@ class GradingSystem{
     }
 }
 public class Specifymark{
-    public static void main(String a[]){
+    public  void printmarks(){
         Scanner scan = new Scanner(System.in);
         GradingSystem gs  = new GradingSystem();
         System.out.print("Enter your marks : ");
