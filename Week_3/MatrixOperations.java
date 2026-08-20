@@ -65,7 +65,7 @@ public class MatrixOperations {
                 int sum=0;
                 for (int l = 0; l < first[0].length; l++) 
                 {
-                    sum+=(first[l][i]*second[i][l])
+                    sum+=(first[l][i]*second[i][l]);
                 }
                 product[i][k] = sum;
             }
