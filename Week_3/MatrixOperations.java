@@ -58,13 +58,42 @@ public class MatrixOperations {
     }
     static int[][] multiply(int[][] first, int[][] second)
     {
-        int [][] product = new int [first.length][first[0].length];
+        int [][] product = new int[first.length][second[0].length];
         for(int i=0;i<first.length;i++){
-            for(int j=0;j<first[0].length;j++){
-                product[i][j] = first[i][j] * second[j][i];
+            for(int k=0;k<second[i].length;k++)
+            {
+                int sum=0;
+                for (int l = 0; l < first[0].length; l++) 
+                {
+                    sum+=(first[l][i]*second[i][l])
+                }
+                product[i][k] = sum;
             }
         }
         return product;
     }
-
+    static int[] columnstt(int arr[][])
+    {
+        int[] twist = new int[arr.length];
+        for(int i=0;i<arr[0].length;i++){
+            int sum=0;
+            for(int j=0;j<arr.length;j++){
+                sum+=arr[j][i];
+            }
+            twist[i] = sum;
+        }
+        return twist;
+    }
+    static int[] rowst(int arr[][])
+    {
+        int[] twist = new int[arr.length];
+        for(int i=0;i<arr[0].length;i++){
+            int sum=0;
+            for(int j=0;j<arr.length;j++){
+                sum+=arr[i][j];
+            }
+            twist[i] = sum;
+        }
+        return twist;
+    }
 }
