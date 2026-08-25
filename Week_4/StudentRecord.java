@@ -3,10 +3,10 @@ public class StudentRecord
     private String name;
     private String studentId;
     private int mark;
-    StudentRecord(String a,String b,int d){
+    public StudentRecord(String a,String b,int d){
         name = a;
         studentId = b;
-        if(d>100 && d<0){
+        if(d<100 && d>0){
             mark = d;
         }
     }
@@ -29,7 +29,7 @@ public class StudentRecord
         this.studentId = studentId;
     }
     boolean setMarks(int mark){
-        if(mark>100 || mark<0){
+        if(mark<=100 && mark>=0){
             this.mark = mark;
             return true;
         }
@@ -66,9 +66,9 @@ public class StudentRecord
             return "D Grade";
         }
     }
-
-    
-    
-    
-
+    @Override
+    public String toString()
+    {
+        return "Student Details-> Name :"+name+'\n'+"Student ID : "+studentId;
+    }
 }
