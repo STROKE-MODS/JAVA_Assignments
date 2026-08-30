@@ -11,15 +11,18 @@ public class BookLoan {
     }
     public BookLoan(String title) {
         this.title = title;
+        
     }
     public BookLoan(String title, String author) {
         this.title = title;
         this.author = author;
+        
     }
     public BookLoan(String title, String author, String bookcode) {
         this.title = title;
         this.author = author;
         this.bookcode = bookcode;
+        
     }
     public boolean borrowbook()
     {
@@ -36,18 +39,18 @@ public class BookLoan {
     }
     public boolean returnBook()
     {
-        loaned_status=0;
+        loaned_status=false;
         return true;
     }    
     public boolean isAvailable()
     {
         if(loaned_status!=true)
         {
-            return false;
+            return true;
         }
         else
         {
-            return true;
+            return false;
         }
     }
     public String getTitle() {
