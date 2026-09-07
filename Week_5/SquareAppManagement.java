@@ -192,8 +192,8 @@ public class SquareAppManagement {
             }
         }
         System.out.println("The maximum area is : "+max_Area);
-        System.out.println("The largest shape is : x`"+largestShape.getClass().getSimpleName());
-
+        System.out.println("The largest shape is : x"+largestShape.getClass().getSimpleName());
+        System.out.println("The Question is finished");
     }
 }
 
